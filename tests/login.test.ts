@@ -23,4 +23,14 @@ test("Login Test Demo", async () => {
 
     await page.waitForTimeout(5000);
 
+    //Creating a new page under the same Context:
+    const page1 = await context.newPage();
+    await page1.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/edit");
+    await page1.waitForTimeout(5000);
+
+    /*//Creating a new page under the different Context:
+    const newcontext = await browser.newContext();
+    const page2 = await context.newPage();
+    await page2.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/edit");
+    await page2.waitForTimeout(5000);*/
 })
