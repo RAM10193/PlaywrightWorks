@@ -4,7 +4,7 @@ import { chromium, test } from "@playwright/test";
 test("Login Test Demo", async () => {
     //To launch a Chromium based browser (Chrome, Edge, etc)
     const browser = await chromium.launch({
-        headless: false
+        //headless: false
     });
     //To set a context for a page
     const context = await browser.newContext();

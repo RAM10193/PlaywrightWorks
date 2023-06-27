@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 33319.60500001907
+      "totalTime": 13372.241999983788
     },
     "preserveOutput": "always",
     "reporter": [
@@ -28,7 +28,7 @@
       [
         "html",
         {
-          "open": "never"
+          "open": "always"
         }
       ]
     ],
@@ -47,7 +47,7 @@
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
-          "tests/recorded.login.test.ts"
+          "tests/assertion.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\recorded.login.test.ts",
-      "file": "tests/recorded.login.test.ts",
+      "title": "tests\\assertion.test.ts",
+      "file": "tests/assertion.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
+          "title": "Login Test Demo",
           "ok": false,
           "tags": [],
           "tests": [
@@ -79,51 +79,59 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 29999,
+                  "status": "failed",
+                  "duration": 11766,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"E-Mail Address\u001b[7ms\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"E-Mail Address\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('label[for=\\'input-email\\']')\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"E-Mail Address\u001b[7ms\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"E-Mail Address\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('label[for=\\'input-email\\']')\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\n    at C:\\PlaywrightWorks\\tests\\assertion.test.ts:28:31",
+                    "location": {
+                      "file": "C:\\PlaywrightWorks\\tests\\assertion.test.ts",
+                      "column": 31,
+                      "line": 28
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mconst\u001b[39m validateTxt \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"label[for='input-email']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"The text present is \"\u001b[39m\u001b[33m+\u001b[39m \u001b[36mawait\u001b[39m validateTxt\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validateTxt)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"E-Mail Addresss\"\u001b[39m)\u001b[33m;\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "C:\\PlaywrightWorks\\tests\\recorded.login.test.ts",
-                        "column": 65,
-                        "line": 15
+                        "file": "C:\\PlaywrightWorks\\tests\\assertion.test.ts",
+                        "column": 31,
+                        "line": 28
                       },
-                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for getByRole('link', { name: 'Logout', exact: true })\n============================================================\n\n\u001b[0m \u001b[90m 13 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Continue'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m' My account'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Logout'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\PlaywrightWorks\\tests\\recorded.login.test.ts:15:65\u001b[22m"
-                    },
-                    {
-                      "message": "Pending operations:\n  - locator.click at tests\\recorded.login.test.ts:15:65\n"
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"E-Mail Address\u001b[7ms\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"E-Mail Address\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('label[for=\\'input-email\\']')\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\u001b[2m  -   locator resolved to <label for=\"input-email\">E-Mail Address</label>\u001b[22m\n\u001b[2m  -   unexpected value \"E-Mail Address\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mconst\u001b[39m validateTxt \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"label[for='input-email']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"The text present is \"\u001b[39m\u001b[33m+\u001b[39m \u001b[36mawait\u001b[39m validateTxt\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validateTxt)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"E-Mail Addresss\"\u001b[39m)\u001b[33m;\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\PlaywrightWorks\\tests\\assertion.test.ts:28:31\u001b[22m"
                     }
                   ],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "E-Mail Address\n"
+                    },
+                    {
+                      "text": "The text present is E-Mail Address\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-26T12:16:45.133Z",
+                  "startTime": "2023-06-27T22:07:40.798Z",
                   "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-recorded.login-test\\video.webm"
-                    },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-recorded.login-test\\test-failed-1.png"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-assertion-Login-Test-Demo\\test-failed-1.png"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\PlaywrightWorks\\tests\\assertion.test.ts",
+                    "column": 31,
+                    "line": 28
+                  }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "db0465646f7260b7fe66-8bf71b0f1acca638bea0",
-          "file": "tests/recorded.login.test.ts",
-          "line": 3,
+          "id": "7c83607d4cc6bb093fbb-cf8decbb2b8d588c4040",
+          "file": "tests/assertion.test.ts",
+          "line": 4,
           "column": 5
         }
       ]
