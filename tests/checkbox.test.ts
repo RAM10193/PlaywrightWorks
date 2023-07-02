@@ -19,6 +19,8 @@ test("Login Test Demo", async () => {
     await expect(Checkbox).toBeChecked();
 
     //Type vs fill
+    const input = page.locator("//input[@value='Functional testing']");
+
     
 
 })

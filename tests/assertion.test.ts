@@ -15,13 +15,17 @@ test("Login Test Demo", async () => {
     await page.goto("https://ecommerce-playground.lambdatest.io/");
     await page.hover("//a[@data-toggle='dropdown']//span[contains(.,' My account')]");
     await page.click("text=Login");
+
+    //await page.fill("//input[@name='email']","gkmram@gmail.com");
+    await page.type("//input[@name='email']","gkmram@gmail.com");
+
     //To check the URL
     await expect(page).toHaveURL("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
     await expect(page).toHaveTitle("Account Login");
     //To assert the attribute - Placeholder
     const msgValidation = page.locator("input#input-email");
     console.log(await msgValidation.getAttribute("placeholder"));
-    await expect(msgValidation).toHaveAttribute("placeholder", "E-Mail Address");
+    await expect(msgValidation).toHaveAttribute("placeholder", "E-Mail Addresss");
 
     const validateTxt = page.locator("label[for='input-email']");
     console.log("The text present is "+ await validateTxt.textContent());
