@@ -1,17 +1,29 @@
 {
   "name": "playwrightworks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Selenium examples using TypeScript and BrowserStack",
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "testchrome": "npx playwright test --project=chromium",
-    "report": "npx playwright show-report"
+    "testchrome": "npx playwright test --project=chromium",    
+    "testBS": "npx playwright test pomtests/registerandLogin.test.ts-browserstack",
+    "report": "npx playwright show-report",
+    "postinstall": "npm update browserstack-node-sdk"
   },
-  "keywords": [],
+  "keywords": [
+    "browserstack",
+    "selenium",
+    "automate",
+    "examples",
+    "TypeScript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.35.1"
+  },
+  "dependencies": {
+    "browserstack-local": "^1.5.3",
+    "browserstack-node-sdk": "^1.22.0"
   }
 }

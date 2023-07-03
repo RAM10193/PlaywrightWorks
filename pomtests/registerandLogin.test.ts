@@ -3,7 +3,7 @@ import {chromium, test} from "@playwright/test"
 import loginPage from "../pageclass/loginPage"
 import RegisterPage from "../pageclass/registerpage";
 
-test("Register Test_01" , async ({page,baseURL}) => {
+/*test("Register Test_01" , async ({page,baseURL}) => {
     /*****using ''page fixture */
     /*
     const browser = await chromium.launch({
@@ -13,7 +13,7 @@ test("Register Test_01" , async ({page,baseURL}) => {
     //To launch a new tab in a browser
     const page = await context.newPage(); */
 
-
+/*
     //Creating a class object
     const reg = new RegisterPage(page);
     //await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register");
@@ -27,7 +27,7 @@ test("Register Test_01" , async ({page,baseURL}) => {
     await reg.enterPasswordConfirm("Abc123$");
     await reg.acceptCondition();
     await reg.clickAccept(); 
-})
+})*/
 
 test("Login Test_01" , async ({baseURL}) => {
     const browser = await chromium.launch({

@@ -35,7 +35,47 @@
       "threshold": 15000
     },
     "quiet": false,
-    "projects": [],
+    "projects": [
+      {
+        "outputDir": "C:/PlaywrightWorks/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/PlaywrightWorks",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtests/registerandLogin.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/PlaywrightWorks/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/PlaywrightWorks",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtests/registerandLogin.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/PlaywrightWorks/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/PlaywrightWorks",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtests/registerandLogin.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.35.1",
