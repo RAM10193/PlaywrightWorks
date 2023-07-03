@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "totalTime": 6637.5490000247955
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -37,74 +35,18 @@
       "threshold": 15000
     },
     "quiet": false,
-    "projects": [
-      {
-        "outputDir": "C:/PlaywrightWorks/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "id": "",
-        "name": "",
-        "testDir": "C:/PlaywrightWorks",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtests/registerandLogin.test.ts"
-        ],
-        "timeout": 30000
-      }
-    ],
+    "projects": [],
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.35.1",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "pomtests\\registerandLogin.test.ts",
-      "file": "pomtests/registerandLogin.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Login Test_01",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 5365,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-07-02T17:44:42.496Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\pomtests-registerandLogin-Login-Test-01\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "1621ce367063fa5edd0c-da2d304fcca3111f401c",
-          "file": "pomtests/registerandLogin.test.ts",
-          "line": 26,
-          "column": 5
-        }
-      ]
+      "message": "No tests found",
+      "stack": "Error: No tests found\n"
     }
-  ],
-  "errors": []
+  ]
 }

@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { Page, expect } from "@playwright/test";
 
 export default class loginPage{
 
@@ -13,7 +13,16 @@ export default class loginPage{
         await this.page.locator("input[type='password']")
             .type(Password);
     }
+
+    async validateText(){
+        const validateTxt = this.page.locator("label[for='input-email']");
+        console.log("The text present is "+ await validateTxt.textContent());
+        await expect(validateTxt).toHaveText("E-Mail Address");
+    }
+
     async clickLogin(){
         await this.page.click("input[type='submit']");
     }
+
+
 }

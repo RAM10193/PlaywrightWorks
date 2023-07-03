@@ -3,19 +3,25 @@ import {chromium, test} from "@playwright/test"
 import loginPage from "../pageclass/loginPage"
 import RegisterPage from "../pageclass/registerpage";
 
-test("Register Test_01" , async () => {
+test("Register Test_01" , async ({page,baseURL}) => {
+    /*****using ''page fixture */
+    /*
     const browser = await chromium.launch({
     });
     //To set a context for a page
     const context = await browser.newContext();
     //To launch a new tab in a browser
-    const page = await context.newPage(); 
+    const page = await context.newPage(); */
+
+
     //Creating a class object
     const reg = new RegisterPage(page);
-    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register");
+    //await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register");
+    //Using Fixture - ${baseURL}
+    await page.goto(`${baseURL}route=account/register`);
     await reg.enterFirstName("Ram");
     await reg.enterLastName("Kumar");
-    await reg.enterEmail("xyzmnop@gmail.com");
+    await reg.enterEmail("xyzmnp@gmail.com");
     await reg.enterTelephone("1234567890");
     await reg.enterPassword("Abc123$");
     await reg.enterPasswordConfirm("Abc123$");
@@ -23,7 +29,7 @@ test("Register Test_01" , async () => {
     await reg.clickAccept(); 
 })
 
-test("Login Test_01" , async () => {
+test("Login Test_01" , async ({baseURL}) => {
     const browser = await chromium.launch({
     });
     //To set a context for a page
@@ -32,7 +38,9 @@ test("Login Test_01" , async () => {
     const page = await context.newPage(); 
     //Creating a class object
     const login = new loginPage(page);
-    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
+    //await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
+    await page.goto(`${baseURL}route=account/login`);
+    await login.validateText();
     await login.enterUserName("xyzmnop@gmail.com");  
     await login.enterPassword("Abc123$");
     await login.clickLogin();

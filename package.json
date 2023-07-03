@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
+    "testchrome": "npx playwright test --project=chromium",
     "report": "npx playwright show-report"
   },
   "keywords": [],
