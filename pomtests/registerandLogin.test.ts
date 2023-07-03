@@ -29,13 +29,19 @@ import RegisterPage from "../pageclass/registerpage";
     await reg.clickAccept(); 
 })*/
 
-test("Login Test_01" , async ({baseURL}) => {
-    const browser = await chromium.launch({
+test("Login Test_01" , async ({page,baseURL},testInfo) => {
+   try{
+
+    await page.evaluate(_ => {},`browserstack_executor: ${JSON.stringify
+        ({action: "setSessionName", arguments: {name:testInfo.project.name}})}`);
+        
+    /*const browser = await chromium.launch({
     });
     //To set a context for a page
     const context = await browser.newContext();
     //To launch a new tab in a browser
-    const page = await context.newPage(); 
+    const page = await context.newPage(); */
+
     //Creating a class object
     const login = new loginPage(page);
     //await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
@@ -44,4 +50,15 @@ test("Login Test_01" , async ({baseURL}) => {
     await login.enterUserName("xyzmnop@gmail.com");  
     await login.enterPassword("Abc123$");
     await login.clickLogin();
-})
+
+    await page.evaluate(_ => {},
+        `browserstack_executor: ${JSON.stringify({action: "setSessionStatus", 
+            arguments: {status: 'passed',reason: 'Logged In Successfully'}})}`);
+    }catch(e){
+        console.log(e);
+        await page.evaluate(_ => {}, 
+            `browserstack_executor: 
+               ${JSON.stringify({action: 'setSessionStatus',
+                  arguments: {status: 'failed',reason: 'Test failed'}})}`);
+    }
+}); 

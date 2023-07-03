@@ -1,5 +1,5 @@
-
-import {devices, type PlaywrightTestConfig} from '@playwright/test'
+import {devices, PlaywrightTestConfig } from "@playwright/test";
+import { getCdpEndpoint } from './browserstack.config.js';
 
 const config: PlaywrightTestConfig = {
     //testMatch: ["tests/checkbox.test.ts"],
@@ -7,6 +7,10 @@ const config: PlaywrightTestConfig = {
     //testMatch: ["tests/login.test.ts"]
     //testMatch: ["tests/recorded.login.test.ts"],    
     testMatch: ["pomtests/registerandLogin.test.ts"],
+
+    //Importing BrowserStack setup to Config file
+    globalSetup: require.resolve('./global-setup'),
+    globalTeardown: require.resolve('./global-teardown'),
     
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
@@ -18,7 +22,7 @@ const config: PlaywrightTestConfig = {
         }
     },
     projects: [
-        {
+        /*{
           name: 'chromium',
           use: { ...devices['Desktop Chrome'] },
         },
@@ -29,7 +33,26 @@ const config: PlaywrightTestConfig = {
         {
             name: 'firefox',
             use: { ...devices['Desktop Firefox'] },
-        },
+        },*/
+        {
+            name: 'chrome@latest:Windows 11',
+            use: {
+              connectOptions: { wsEndpoint: getCdpEndpoint('chrome@latest:Windows 11','test1') },
+            },
+          }
+          ,
+          {
+            name: 'playwright-webkit@latest:OSX Ventura',
+            use: {
+              connectOptions: { wsEndpoint: getCdpEndpoint('playwright-webkit@latest:OSX Ventura', 'test2') }
+            },
+          },
+          {
+            name: 'playwright-firefox:Windows 11',
+            use: {
+              connectOptions: { wsEndpoint: getCdpEndpoint('playwright-firefox:Windows 11', 'test3') }
+            },
+          }
     ],
     //the failed test will re-run for n times.
     retries: 1,

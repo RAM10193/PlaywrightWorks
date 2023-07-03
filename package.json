@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx playwright test",
     "testchrome": "npx playwright test --project=chromium",    
-    "testBS": "npx playwright test pomtests/registerandLogin.test.ts-browserstack",
+    "testBS": "npx playwright test pomtests/registerandLogin.test.ts",
     "report": "npx playwright show-report",
     "postinstall": "npm update browserstack-node-sdk"
   },
