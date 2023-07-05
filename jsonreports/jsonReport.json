@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "totalTime": 34964.00600004196
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -42,8 +40,8 @@
         "outputDir": "C:/PlaywrightWorks/test-results",
         "repeatEach": 1,
         "retries": 1,
-        "id": "chrome@latest:Windows 11",
-        "name": "chrome@latest:Windows 11",
+        "id": "chromium",
+        "name": "chromium",
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
@@ -55,8 +53,8 @@
         "outputDir": "C:/PlaywrightWorks/test-results",
         "repeatEach": 1,
         "retries": 1,
-        "id": "playwright-webkit@latest:OSX Ventura",
-        "name": "playwright-webkit@latest:OSX Ventura",
+        "id": "webkit",
+        "name": "webkit",
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
@@ -68,8 +66,21 @@
         "outputDir": "C:/PlaywrightWorks/test-results",
         "repeatEach": 1,
         "retries": 1,
-        "id": "playwright-firefox:Windows 11",
-        "name": "playwright-firefox:Windows 11",
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/PlaywrightWorks",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtests/registerandLogin.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/PlaywrightWorks/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "MSEdge",
+        "name": "MSEdge",
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
@@ -84,119 +95,11 @@
     "workers": 2,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "pomtests\\registerandLogin.test.ts",
-      "file": "pomtests/registerandLogin.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Login Test_01",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chrome@latest:Windows 11",
-              "projectName": "chrome@latest:Windows 11",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 4200,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "The text present is E-Mail Address\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-07-04T09:48:50.899Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\pomtests-registerandLogin-Login-Test-01-chrome-latest-Windows-11\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "playwright-webkit@latest:OSX Ventura",
-              "projectName": "playwright-webkit@latest:OSX Ventura",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 8496,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "The text present is E-Mail Address\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-07-04T09:48:50.937Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\pomtests-registerandLogin-Login-Test-01-playwright-webkit-latest-OSX-Ventura\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "playwright-firefox:Windows 11",
-              "projectName": "playwright-firefox:Windows 11",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 6271,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "The text present is E-Mail Address\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-07-04T09:49:07.449Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\pomtests-registerandLogin-Login-Test-01-playwright-firefox-Windows-11\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "1621ce367063fa5edd0c-6805f662b2b0db9bca49",
-          "file": "pomtests/registerandLogin.test.ts",
-          "line": 32,
-          "column": 5
-        }
-      ]
+      "message": "No tests found",
+      "stack": "Error: No tests found\n"
     }
-  ],
-  "errors": []
+  ]
 }

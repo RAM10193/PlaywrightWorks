@@ -22,7 +22,7 @@ const config: PlaywrightTestConfig = {
         }
     },
     projects: [
-        /*{
+        {
           name: 'chromium',
           use: { ...devices['Desktop Chrome'] },
         },
@@ -37,8 +37,8 @@ const config: PlaywrightTestConfig = {
         {
           name: 'MSEdge',
           use: { ...devices['Desktop Edge'] },
-      },*/
-        {
+      },
+        /*{
             name: 'chrome@latest:Windows 11',
             use: {
               connectOptions: { wsEndpoint: getCdpEndpoint('chrome@latest:Windows 11','test1') },
@@ -56,7 +56,7 @@ const config: PlaywrightTestConfig = {
             use: {
               connectOptions: { wsEndpoint: getCdpEndpoint('playwright-firefox:Windows 11', 'test3') }
             },
-          }
+          }*/
     ],
     //the failed test will re-run for n times.
     retries: 1,
