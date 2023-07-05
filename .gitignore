@@ -5,3 +5,4 @@ node_modules/
 /browserstack.err
 /local.log
 /log
+/tests/visualcomparison.test.ts-snapshots/*.png

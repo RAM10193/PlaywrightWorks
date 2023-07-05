@@ -6,11 +6,12 @@ const config: PlaywrightTestConfig = {
     //testMatch: ["tests/assertion.test.ts"],
     //testMatch: ["tests/login.test.ts"]
     //testMatch: ["tests/recorded.login.test.ts"],    
-    testMatch: ["pomtests/registerandLogin.test.ts"],
+    //testMatch: ["pomtests/registerandLogin.test.ts"],
+    testMatch: ["tests/visualcomparison.test.ts"],
 
     //Importing BrowserStack setup to Config file
-    globalSetup: require.resolve('./global-setup'),
-    globalTeardown: require.resolve('./global-teardown'),
+    /*globalSetup: require.resolve('./global-setup'),
+    globalTeardown: require.resolve('./global-teardown'),*/
     
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
@@ -22,7 +23,7 @@ const config: PlaywrightTestConfig = {
         }
     },
     projects: [
-        {
+        /*{
           name: 'chromium',
           use: { ...devices['Desktop Chrome'] },
         },
@@ -37,7 +38,7 @@ const config: PlaywrightTestConfig = {
         {
           name: 'MSEdge',
           use: { ...devices['Desktop Edge'] },
-      },
+      },*/
         /*{
             name: 'chrome@latest:Windows 11',
             use: {
@@ -59,7 +60,7 @@ const config: PlaywrightTestConfig = {
           }*/
     ],
     //the failed test will re-run for n times.
-    retries: 1,
+    retries: 0,
     reporter: [["dot"],["json",{
         outputFile: "jsonreports/jsonReport.json"
     }], ["html",{

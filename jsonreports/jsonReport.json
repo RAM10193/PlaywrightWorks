@@ -4,8 +4,8 @@
     "rootDir": "C:/PlaywrightWorks",
     "forbidOnly": false,
     "fullyParallel": false,
-    "globalSetup": "C:\\PlaywrightWorks\\global-setup.js",
-    "globalTeardown": "C:\\PlaywrightWorks\\global-teardown.js",
+    "globalSetup": null,
+    "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
@@ -35,60 +35,7 @@
       "threshold": 15000
     },
     "quiet": false,
-    "projects": [
-      {
-        "outputDir": "C:/PlaywrightWorks/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "C:/PlaywrightWorks",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtests/registerandLogin.test.ts"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/PlaywrightWorks/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "C:/PlaywrightWorks",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtests/registerandLogin.test.ts"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/PlaywrightWorks/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/PlaywrightWorks",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtests/registerandLogin.test.ts"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/PlaywrightWorks/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "id": "MSEdge",
-        "name": "MSEdge",
-        "testDir": "C:/PlaywrightWorks",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtests/registerandLogin.test.ts"
-        ],
-        "timeout": 30000
-      }
-    ],
+    "projects": [],
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.35.1",
