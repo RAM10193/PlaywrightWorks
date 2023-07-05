@@ -33,7 +33,11 @@ const config: PlaywrightTestConfig = {
         {
             name: 'firefox',
             use: { ...devices['Desktop Firefox'] },
-        },*/
+        },
+        {
+          name: 'MSEdge',
+          use: { ...devices['Desktop Edge'] },
+      },*/
         {
             name: 'chrome@latest:Windows 11',
             use: {

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 28100.271999955177
+      "totalTime": 34964.00600004196
     },
     "preserveOutput": "always",
     "reporter": [
@@ -106,7 +106,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4342,
+                  "duration": 4200,
                   "errors": [],
                   "stdout": [
                     {
@@ -115,7 +115,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-03T21:26:08.865Z",
+                  "startTime": "2023-07-04T09:48:50.899Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -137,7 +137,7 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4160,
+                  "duration": 8496,
                   "errors": [],
                   "stdout": [
                     {
@@ -146,7 +146,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-03T21:26:08.658Z",
+                  "startTime": "2023-07-04T09:48:50.937Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -168,7 +168,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 5512,
+                  "duration": 6271,
                   "errors": [],
                   "stdout": [
                     {
@@ -177,7 +177,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-03T21:26:18.936Z",
+                  "startTime": "2023-07-04T09:49:07.449Z",
                   "attachments": [
                     {
                       "name": "screenshot",
