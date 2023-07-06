@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 21623.759999990463
+      "totalTime": 16964.712000012398
     },
     "preserveOutput": "always",
     "reporter": [
@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "example test",
+          "title": "Login Test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,7 +80,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7430,
+                  "duration": 8445,
                   "errors": [],
                   "stdout": [
                     {
@@ -89,17 +89,17 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-06T08:33:44.714Z",
+                  "startTime": "2023-07-06T08:53:51.984Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-example-test-chromium\\video.webm"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Login-Test-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-example-test-chromium\\test-finished-1.png"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Login-Test-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -107,9 +107,98 @@
               "status": "expected"
             }
           ],
-          "id": "2a8b971214d4af0cd437-6bdb83a5a193c96d7898",
+          "id": "2a8b971214d4af0cd437-b528fb02760432320ec0",
           "file": "tests/visualcomparison.test.ts",
           "line": 5,
+          "column": 5
+        },
+        {
+          "title": "Submit Test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 5050,
+                  "error": {
+                    "message": "\u001b[31mScreenshot comparison failed:\u001b[39m\n\n  494 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(Login.png) with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - 494 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 494 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-expected.png\u001b[39m\nReceived: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-actual.png\u001b[39m\n    Diff: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-diff.png\u001b[39m",
+                    "stack": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  494 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(Login.png) with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - 494 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 494 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-expected.png\u001b[39m\nReceived: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-actual.png\u001b[39m\n    Diff: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-diff.png\u001b[39m\n    at C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts:34:22",
+                    "location": {
+                      "file": "C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts",
+                      "column": 22,
+                      "line": 34
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 32 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Login button value after update is: \"\u001b[39m\u001b[33m+\u001b[39mvaluelgn)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"Login.png\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"Login.png\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts",
+                        "column": 22,
+                        "line": 34
+                      },
+                      "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  494 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(Login.png) with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - 494 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 494 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-expected.png\u001b[39m\nReceived: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-actual.png\u001b[39m\n    Diff: \u001b[33mC:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-diff.png\u001b[39m\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Login button value after update is: \"\u001b[39m\u001b[33m+\u001b[39mvaluelgn)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"Login.png\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"Login.png\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts:34:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Login button value is: Login\n"
+                    },
+                    {
+                      "text": "Login button value after update is: Login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-07-06T08:54:01.666Z",
+                  "attachments": [
+                    {
+                      "name": "Login-expected.png",
+                      "contentType": "image/png",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-expected.png"
+                    },
+                    {
+                      "name": "Login-actual.png",
+                      "contentType": "image/png",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-actual.png"
+                    },
+                    {
+                      "name": "Login-diff.png",
+                      "contentType": "image/png",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\Login-diff.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Submit-Test-chromium\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts",
+                    "column": 22,
+                    "line": 34
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2a8b971214d4af0cd437-ce3d44a54c9a9550ec6e",
+          "file": "tests/visualcomparison.test.ts",
+          "line": 17,
           "column": 5
         }
       ]

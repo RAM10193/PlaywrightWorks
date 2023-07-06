@@ -9,14 +9,6 @@ test('Login Test', async ({ page }) => {
   const lgnbtn = page.locator("//input[@type='submit']");
   const valuelgn = await lgnbtn.getAttribute('value');
   console.log("Login button value is: "+valuelgn);  
-
-  await page.evaluate(()=>{
-    const selector = document.querySelector("input[value$='Login']");
-    if(selector !== null){
-      selector.setAttribute("value","submit");
-    }    
-  });
-
   await expect(page).toHaveScreenshot("Login.png");
   expect(await page.screenshot()).toMatchSnapshot("Login.png");
 });
@@ -36,7 +28,9 @@ test('Submit Test', async ({ page }) => {
       selector.setAttribute("value","submit");
     }    
   });
+  const valuelgnUpdated = await lgnbtn.getAttribute('value');
+  console.log("Login button value after update is: "+valuelgn);
 
-  await expect(page).toHaveScreenshot("landingpage.png");
-  expect(await page.screenshot()).toMatchSnapshot("landingpage.png");
+  await expect(page).toHaveScreenshot("Login.png");
+  expect(await page.screenshot()).toMatchSnapshot("Login.png");
 });
