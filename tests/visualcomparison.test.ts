@@ -1,6 +1,7 @@
 //https://playwright.dev/docs/test-snapshots
 
 import { test, expect } from '@playwright/test';
+import percySnapshot from '@percy/playwright';
 
 /*test('Login Test', async ({ page }) => {
   await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login');
@@ -32,15 +33,16 @@ import { test, expect } from '@playwright/test';
   expect(await page.screenshot()).toMatchSnapshot("Login.png");
 });*/
 
-test('Percy Login Test', async ({ page }) => {
+/*test('Percy Login Test', async ({ page }) => {
   await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login');
   const lgnbtn = page.locator("//input[@type='submit']");
   const valuelgn = await lgnbtn.getAttribute('value');
   console.log("Login button value is: "+valuelgn);  
-  await percySnapshot(page);
-});
+  await percySnapshot(page,"Login page launched successfully");
+});*/
 
-test('Percy Submit Test', async ({ page }) => {
+test('Percy Login Test', async ({ page }) => {
+  //test('Percy Submit Test', async ({ page }) => {
   await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login');
   const lgnbtn = page.locator("//input[@type='submit']");
   const valuelgn = await lgnbtn.getAttribute('value');
@@ -55,5 +57,5 @@ test('Percy Submit Test', async ({ page }) => {
   });
   const valuelgnUpdated = await lgnbtn.getAttribute('value');
   console.log("Login button value after update is: "+valuelgn);
-  await percySnapshot(page);
+  await percySnapshot(page,"Login page launched successfully");
 });

@@ -4,7 +4,8 @@
   "description": "Selenium examples using TypeScript and BrowserStack",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
+    "test": "percy exec -- playwright test",
+    "testnormal": "npx playwright test",
     "testchrome": "npx playwright test --project=chromium",
     "testBS": "npx playwright test pomtests/registerandLogin.test.ts",
     "report": "npx playwright show-report",
