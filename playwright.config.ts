@@ -1,6 +1,7 @@
 import {devices, PlaywrightTestConfig } from "@playwright/test";
 import { getCdpEndpoint } from './browserstack.config.js';
 
+
 const config: PlaywrightTestConfig = {
     //testMatch: ["tests/checkbox.test.ts"],
     //testMatch: ["tests/assertion.test.ts"],
