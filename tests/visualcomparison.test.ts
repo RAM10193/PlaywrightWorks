@@ -58,4 +58,4 @@ test('Percy Login Test', async ({ page }) => {
   const valuelgnUpdated = await lgnbtn.getAttribute('value');
   console.log("Login button value after update is: "+valuelgn);
   await percySnapshot(page,"Login page launched successfully");
-});
+});*/
