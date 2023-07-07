@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "totalTime": 28255.108999967575
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -53,24 +55,63 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.35.1",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts: Unterminated comment. (44:0)\n\n\u001b[0m \u001b[90m 42 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m \u001b[90m/*test('Percy Login Test', async ({ page }) => {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m \u001b[90m  //test('Percy Submit Test', async ({ page }) => {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m \u001b[90m  await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login');\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m \u001b[90m  const lgnbtn = page.locator(\"//input[@type='submit']\");\u001b[39m\u001b[0m",
-      "stack": "SyntaxError: C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts: Unterminated comment. (44:0)\n\n\u001b[0m \u001b[90m 42 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m \u001b[90m/*test('Percy Login Test', async ({ page }) => {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m \u001b[90m  //test('Percy Submit Test', async ({ page }) => {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m \u001b[90m  await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login');\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m \u001b[90m  const lgnbtn = page.locator(\"//input[@type='submit']\");\u001b[39m\u001b[0m\n",
-      "location": {
-        "file": "C:\\PlaywrightWorks\\tests\\visualcomparison.test.ts",
-        "line": 44,
-        "column": 0
-      },
-      "snippet": "\u001b[90m   at \u001b[39mtests\\visualcomparison.test.ts:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m \u001b[90m/*test('Percy Login Test', async ({ page }) => {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m \u001b[90m  //test('Percy Submit Test', async ({ page }) => {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m \u001b[90m  await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login');\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m \u001b[90m  const lgnbtn = page.locator(\"//input[@type='submit']\");\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "No tests found",
-      "stack": "Error: No tests found\n"
+      "title": "tests\\visualcomparison.test.ts",
+      "file": "tests/visualcomparison.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Percy Login Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome@latest:Windows 11",
+              "projectName": "chrome@latest:Windows 11",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 13107,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Login button value is: Login\n"
+                    },
+                    {
+                      "text": "Login button value after update is: Login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-07-07T09:27:28.988Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Percy-Login-Test-chrome-latest-Windows-11\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2a8b971214d4af0cd437-3ee1b47825306c6076cf",
+          "file": "tests/visualcomparison.test.ts",
+          "line": 44,
+          "column": 5
+        }
+      ]
     }
-  ]
+  ],
+  "errors": []
 }
