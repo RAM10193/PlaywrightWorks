@@ -10,8 +10,8 @@ const config: PlaywrightTestConfig = {
     testMatch: ["tests/visualcomparison.test.ts"],
 
     //Importing BrowserStack setup to Config file
-    /*globalSetup: require.resolve('./global-setup'),
-    globalTeardown: require.resolve('./global-teardown'),*/
+    globalSetup: require.resolve('./global-setup'),
+    globalTeardown: require.resolve('./global-teardown'),
     
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
@@ -23,11 +23,11 @@ const config: PlaywrightTestConfig = {
         }
     },
     projects: [
-        {
+        /*{
           name: 'chromium',
           use: { ...devices['Desktop Chrome'] },
         },
-        /*{
+        {
             name: 'webkit',
             use: { ...devices['Desktop Safari'] },
         },
@@ -38,7 +38,7 @@ const config: PlaywrightTestConfig = {
         {
           name: 'MSEdge',
           use: { ...devices['Desktop Edge'] },
-      },
+      },*/
         {
             name: 'chrome@latest:Windows 11',
             use: {
@@ -46,7 +46,7 @@ const config: PlaywrightTestConfig = {
             },
           }
           ,
-          {
+          /*{
             name: 'playwright-webkit@latest:OSX Ventura',
             use: {
               connectOptions: { wsEndpoint: getCdpEndpoint('playwright-webkit@latest:OSX Ventura', 'test2') }
