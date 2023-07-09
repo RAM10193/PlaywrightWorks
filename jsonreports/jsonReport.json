@@ -4,14 +4,14 @@
     "rootDir": "C:/PlaywrightWorks",
     "forbidOnly": false,
     "fullyParallel": false,
-    "globalSetup": "C:\\PlaywrightWorks\\global-setup.js",
-    "globalTeardown": "C:\\PlaywrightWorks\\global-teardown.js",
+    "globalSetup": null,
+    "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 28255.108999967575
+      "totalTime": 10389.337000131607
     },
     "preserveOutput": "always",
     "reporter": [
@@ -28,7 +28,7 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "never"
         }
       ]
     ],
@@ -42,12 +42,12 @@
         "outputDir": "C:/PlaywrightWorks/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "chrome@latest:Windows 11",
-        "name": "chrome@latest:Windows 11",
+        "id": "chromium",
+        "name": "chromium",
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
-          "tests/visualcomparison.test.ts"
+          "tests/webTablePractice3.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\visualcomparison.test.ts",
-      "file": "tests/visualcomparison.test.ts",
+      "title": "tests\\webTablePractice3.test.ts",
+      "file": "tests/webTablePractice3.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Percy Login Test",
+          "title": "WebTable Handle",
           "ok": true,
           "tags": [],
           "tests": [
@@ -74,30 +74,41 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chrome@latest:Windows 11",
-              "projectName": "chrome@latest:Windows 11",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 13107,
+                  "duration": 8170,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Login button value is: Login\n"
+                      "text": "The header values are \n\n\nManualTesting\nAutomationTesting\nIssueTracker\n\n\n"
                     },
                     {
-                      "text": "Login button value after update is: Login\n"
+                      "text": "Total No. of rows: 3\n"
+                    },
+                    {
+                      "text": "Total No. of Columns: 5\n"
+                    },
+                    {
+                      "text": "The issue tracker is: Bugzilla\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-07T09:27:28.988Z",
+                  "startTime": "2023-07-09T20:38:48.021Z",
                   "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-webTablePractice3-WebTable-Handle-chromium\\video.webm"
+                    },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-visualcomparison-Percy-Login-Test-chrome-latest-Windows-11\\test-finished-1.png"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-webTablePractice3-WebTable-Handle-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -105,9 +116,9 @@
               "status": "expected"
             }
           ],
-          "id": "2a8b971214d4af0cd437-3ee1b47825306c6076cf",
-          "file": "tests/visualcomparison.test.ts",
-          "line": 44,
+          "id": "fe9a7b08044a3e50a25c-d511f6bdfa40832fbca4",
+          "file": "tests/webTablePractice3.test.ts",
+          "line": 3,
           "column": 5
         }
       ]

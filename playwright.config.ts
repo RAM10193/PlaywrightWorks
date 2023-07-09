@@ -8,7 +8,12 @@ const config: PlaywrightTestConfig = {
     //testMatch: ["tests/login.test.ts"]
     //testMatch: ["tests/recorded.login.test.ts"],    
     //testMatch: ["pomtests/registerandLogin.test.ts"],
-    testMatch: ["tests/visualcomparison.test.ts"],
+    //testMatch: ["tests/visualcomparison.test.ts"],
+    //testMatch: ["tests/webTablepractice1.test.ts"],
+    //testMatch: ["tests/webtablePractice2.test.ts"],
+    testMatch: ["tests/webTablePractice3.test.ts"],
+    
+    
 
     //Importing BrowserStack setup to Config file
     /*globalSetup: require.resolve('./global-setup'),
@@ -65,7 +70,7 @@ const config: PlaywrightTestConfig = {
     reporter: [["dot"],["json",{
         outputFile: "jsonreports/jsonReport.json"
     }], ["html",{
-            open: 'always'
+            open: 'never'
     }]]
 };
 
