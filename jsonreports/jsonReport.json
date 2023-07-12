@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 10389.337000131607
+      "totalTime": 9925.200000047684
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
-          "tests/webTablePractice3.test.ts"
+          "tests/WebTablePractice4.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\webTablePractice3.test.ts",
-      "file": "tests/webTablePractice3.test.ts",
+      "title": "tests\\WebTablePractice4.test.ts",
+      "file": "tests/WebTablePractice4.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "WebTable Handle",
+          "title": "webTable Handle",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,35 +80,35 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8170,
+                  "duration": 7278,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "The header values are \n\n\nManualTesting\nAutomationTesting\nIssueTracker\n\n\n"
+                      "text": "header values: \n\n\nManualTesting\nAutomationTesting\nIssueTracker\n\n\n"
                     },
                     {
-                      "text": "Total No. of rows: 3\n"
+                      "text": "Rows count: 3\n"
                     },
                     {
-                      "text": "Total No. of Columns: 5\n"
+                      "text": "Total no of columns: 5\n"
                     },
                     {
-                      "text": "The issue tracker is: Bugzilla\n"
+                      "text": "The issue tracker is:TFS\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-09T20:38:48.021Z",
+                  "startTime": "2023-07-12T09:51:43.650Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-webTablePractice3-WebTable-Handle-chromium\\video.webm"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-webTablePractice3-WebTable-Handle-chromium\\test-finished-1.png"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -116,8 +116,8 @@
               "status": "expected"
             }
           ],
-          "id": "fe9a7b08044a3e50a25c-d511f6bdfa40832fbca4",
-          "file": "tests/webTablePractice3.test.ts",
+          "id": "b32936bc03c7c71e4bc4-31150ac5edabe62b7df7",
+          "file": "tests/WebTablePractice4.test.ts",
           "line": 3,
           "column": 5
         }

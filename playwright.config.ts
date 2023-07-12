@@ -11,8 +11,8 @@ const config: PlaywrightTestConfig = {
     //testMatch: ["tests/visualcomparison.test.ts"],
     //testMatch: ["tests/webTablepractice1.test.ts"],
     //testMatch: ["tests/webtablePractice2.test.ts"],
-    testMatch: ["tests/webTablePractice3.test.ts"],
-    
+    //testMatch: ["tests/webTablePractice3.test.ts"],
+    testMatch: ["tests/WebTablePractice4.test.ts"],
     
 
     //Importing BrowserStack setup to Config file
