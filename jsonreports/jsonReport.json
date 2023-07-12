@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 6559.7300000190735
+      "totalTime": 17597.709000110626
     },
     "preserveOutput": "always",
     "reporter": [
@@ -80,25 +80,25 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 4074,
+                  "duration": 15343,
                   "error": {
-                    "message": "locator.check: Error: strict mode violation: locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//input') resolved to 2 elements:\n    1) <input type=\"checkbox\"/> aka getByRole('row', { name: 'Functional QTP Bugzilla Delete' }).getByRole('checkbox')\n    2) <input id=\"btn\" class=\"btn\" type=\"button\" value=\"Delete…/> aka getByRole('row', { name: 'Functional QTP Bugzilla Delete' }).getByRole('button', { name: 'Delete' })\n\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//input')\n============================================================",
-                    "stack": "Error: locator.check: Error: strict mode violation: locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//input') resolved to 2 elements:\n    1) <input type=\"checkbox\"/> aka getByRole('row', { name: 'Functional QTP Bugzilla Delete' }).getByRole('checkbox')\n    2) <input id=\"btn\" class=\"btn\" type=\"button\" value=\"Delete…/> aka getByRole('row', { name: 'Functional QTP Bugzilla Delete' }).getByRole('button', { name: 'Delete' })\n\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//input')\n============================================================\n    at C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts:36:82",
+                    "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//a[@href=\\'https://www.selenium.dev/\\']')\n============================================================",
+                    "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//a[@href=\\'https://www.selenium.dev/\\']')\n============================================================\n    at C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts:37:114",
                     "location": {
                       "file": "C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts",
-                      "column": 82,
-                      "line": 36
+                      "column": 114,
+                      "line": 37
                     },
-                    "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"The issue tracker is:\"\u001b[39m\u001b[33m+\u001b[39m\u001b[36mawait\u001b[39m cellval\u001b[33m.\u001b[39mnth(\u001b[35m3\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m              \u001b[90m//To capture the xpath of check box\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m`//table[@id='table01']//tbody/tr[${j}]//input`\u001b[39m)\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m             \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             }            \u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m          }    \u001b[0m"
+                    "snippet": "\u001b[0m \u001b[90m 35 |\u001b[39m              \u001b[90m//To capture the xpath of check box\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//input[@type='checkbox']\"\u001b[39m)\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//a[@href='https://www.selenium.dev/']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m               console\u001b[33m.\u001b[39mlog()\u001b[33m;\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             }            \u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts",
-                        "column": 82,
-                        "line": 36
+                        "column": 114,
+                        "line": 37
                       },
-                      "message": "Error: locator.check: Error: strict mode violation: locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//input') resolved to 2 elements:\n    1) <input type=\"checkbox\"/> aka getByRole('row', { name: 'Functional QTP Bugzilla Delete' }).getByRole('checkbox')\n    2) <input id=\"btn\" class=\"btn\" type=\"button\" value=\"Delete…/> aka getByRole('row', { name: 'Functional QTP Bugzilla Delete' }).getByRole('button', { name: 'Delete' })\n\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//input')\n============================================================\n\n\u001b[0m \u001b[90m 34 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"The issue tracker is:\"\u001b[39m\u001b[33m+\u001b[39m\u001b[36mawait\u001b[39m cellval\u001b[33m.\u001b[39mnth(\u001b[35m3\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m              \u001b[90m//To capture the xpath of check box\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m`//table[@id='table01']//tbody/tr[${j}]//input`\u001b[39m)\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m             \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             }            \u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m          }    \u001b[0m\n\n\u001b[2m    at C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts:36:82\u001b[22m"
+                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//a[@href=\\'https://www.selenium.dev/\\']')\n============================================================\n\n\u001b[0m \u001b[90m 35 |\u001b[39m              \u001b[90m//To capture the xpath of check box\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//input[@type='checkbox']\"\u001b[39m)\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//a[@href='https://www.selenium.dev/']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m               console\u001b[33m.\u001b[39mlog()\u001b[33m;\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             }            \u001b[0m\n\n\u001b[2m    at C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts:37:114\u001b[22m"
                     }
                   ],
                   "stdout": [
@@ -117,23 +117,18 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-12T15:11:48.854Z",
+                  "startTime": "2023-07-12T15:29:16.669Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\test-failed-1.png"
                     }
                   ],
                   "errorLocation": {
                     "file": "C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts",
-                    "column": 82,
-                    "line": 36
+                    "column": 114,
+                    "line": 37
                   }
                 }
               ],
