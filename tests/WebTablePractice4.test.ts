@@ -33,7 +33,7 @@ test("webTable Handle", async({page}) =>{
             //To check the issue tracker value:
             console.log("The issue tracker is:"+await cellval.nth(3).textContent());
              //To capture the xpath of check box
-             await page.locator("//table[@id='table01']//tbody/tr["+j+"]/td[1]").check();             
+             await page.locator(`//table[@id='table01']//tbody/tr[${j}]//input`).check();             
              await page.waitForTimeout(5000);  
             }            
          }    
