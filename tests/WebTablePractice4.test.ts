@@ -22,18 +22,18 @@ test("webTable Handle", async({page}) =>{
    const col = rows.first().locator("td");
    console.log("Total no of columns: "+ await col.count());
 
-   for (let i = 0; i < await rows.count(); i++) {
-         //to access a particular row
-         const row = rows.nth(i);
-         const cellval = row.locator("td");
-         for (let j = 0; j < await cellval.count(); j++) {
-            if(await cellval.nth(j).textContent() == "GUI"){
+   for (let i = 1; i <= await rows.count(); i++) {         
+         for (let j = 1; j <= await col.count(); j++) {
+            const chkBox = page.locator("//table[@id='table01']//tbody/tr["+i+"]/td[1]//input[@type='checkbox']");
+            const cellvalMatch = page.locator("//table[@id='table01']//tbody/tr["+i+"]/td["+j+"]");
+            if(await cellvalMatch.textContent()=="GUI"){
+               debugger;
              //Playwright method:
-             //cellval.first().locator("input").check();
-            //To check the issue tracker value:
-            console.log("The issue tracker is:"+await cellval.nth(3).textContent());
+             //col.first().locator("input").check(); 
              //To capture the xpath of check box
-             await page.locator("//table[@id='table01']//tbody/tr["+j+"]//input[@type='checkbox']").check();  
+             await chkBox.check();  
+             //To check the issue tracker value:
+             console.log("The issue tracker is:"+await col.nth(3).textContent());
              await page.locator("//table[@id='table01']//tbody/tr["+j+"]//a[@href='https://www.selenium.dev/']").click();  
               console.log(); 
              await page.waitForTimeout(5000);  

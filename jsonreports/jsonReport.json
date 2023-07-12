@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 17597.709000110626
+      "totalTime": 12165.419999837875
     },
     "preserveOutput": "always",
     "reporter": [
@@ -67,7 +67,7 @@
       "specs": [
         {
           "title": "webTable Handle",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,28 +79,9 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 15343,
-                  "error": {
-                    "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//a[@href=\\'https://www.selenium.dev/\\']')\n============================================================",
-                    "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//a[@href=\\'https://www.selenium.dev/\\']')\n============================================================\n    at C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts:37:114",
-                    "location": {
-                      "file": "C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts",
-                      "column": 114,
-                      "line": 37
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 35 |\u001b[39m              \u001b[90m//To capture the xpath of check box\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//input[@type='checkbox']\"\u001b[39m)\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//a[@href='https://www.selenium.dev/']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m               console\u001b[33m.\u001b[39mlog()\u001b[33m;\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             }            \u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts",
-                        "column": 114,
-                        "line": 37
-                      },
-                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//table[@id=\\'table01\\']//tbody/tr[1]//a[@href=\\'https://www.selenium.dev/\\']')\n============================================================\n\n\u001b[0m \u001b[90m 35 |\u001b[39m              \u001b[90m//To capture the xpath of check box\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//input[@type='checkbox']\"\u001b[39m)\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='table01']//tbody/tr[\"\u001b[39m\u001b[33m+\u001b[39mj\u001b[33m+\u001b[39m\u001b[32m\"]//a[@href='https://www.selenium.dev/']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m               console\u001b[33m.\u001b[39mlog()\u001b[33m;\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m              \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             }            \u001b[0m\n\n\u001b[2m    at C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts:37:114\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 9252,
+                  "errors": [],
                   "stdout": [
                     {
                       "text": "header values: \n\n\nManualTesting\nAutomationTesting\nIssueTracker\n\n\n"
@@ -112,27 +93,30 @@
                       "text": "Total no of columns: 5\n"
                     },
                     {
-                      "text": "The issue tracker is:TFS\n"
+                      "text": "The issue tracker is:Bugzilla\n"
+                    },
+                    {
+                      "text": "\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-12T15:29:16.669Z",
+                  "startTime": "2023-07-12T16:26:09.396Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\test-finished-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\PlaywrightWorks\\tests\\WebTablePractice4.test.ts",
-                    "column": 114,
-                    "line": 37
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "b32936bc03c7c71e4bc4-31150ac5edabe62b7df7",
