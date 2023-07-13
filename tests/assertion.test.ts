@@ -29,6 +29,6 @@ test("Login Test Demo", async () => {
 
     const validateTxt = page.locator("label[for='input-email']");
     console.log("The text present is "+ await validateTxt.textContent());
-    await expect(validateTxt).toHaveText("E-Mail Addresss"); 
+    await expect(validateTxt).toHaveText("E-Mail Addresss");
 
 })

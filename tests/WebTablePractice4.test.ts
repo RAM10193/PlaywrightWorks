@@ -3,7 +3,6 @@ import {test} from "@playwright/test"
 test("webTable Handle", async({page}) =>{
 
    await page.goto("https://qavbox.github.io/demo/webtable/");
-
    //WebElement tbl = dr.findelement(By.xpath()); 
    //To capture the entire table:   
    const table = page.locator("//table[@id='table01']");
@@ -26,16 +25,14 @@ test("webTable Handle", async({page}) =>{
          for (let j = 1; j <= await col.count(); j++) {
             const chkBox = page.locator("//table[@id='table01']//tbody/tr["+i+"]/td[1]//input[@type='checkbox']");
             const cellvalMatch = page.locator("//table[@id='table01']//tbody/tr["+i+"]/td["+j+"]");
-            if(await cellvalMatch.textContent()=="GUI"){
-               debugger;
+            if(await cellvalMatch.textContent()==="GUI"){
              //Playwright method:
              //col.first().locator("input").check(); 
              //To capture the xpath of check box
              await chkBox.check();  
              //To check the issue tracker value:
-             console.log("The issue tracker is:"+await col.nth(3).textContent());
-             await page.locator("//table[@id='table01']//tbody/tr["+j+"]//a[@href='https://www.selenium.dev/']").click();  
-              console.log(); 
+             console.log("The issue tracker is:"+await table.locator("//tbody/tr["+i+"]/td[4]").textContent());
+             await page.locator("//table[@id='table01']//tbody/tr["+i+"]//a[@href='https://www.selenium.dev/']").click();  
              await page.waitForTimeout(5000);  
             }            
          }    

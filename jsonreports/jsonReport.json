@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 12165.419999837875
+      "totalTime": 11854.003999999724
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
-          "tests/WebTablePractice4.test.ts"
+          "tests/frame_windohandle.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\WebTablePractice4.test.ts",
-      "file": "tests/WebTablePractice4.test.ts",
+      "title": "tests\\frame_windohandle.test.ts",
+      "file": "tests/frame_windohandle.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "webTable Handle",
+          "title": "iFrame Handle",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,38 +80,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9252,
+                  "duration": 9876,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "header values: \n\n\nManualTesting\nAutomationTesting\nIssueTracker\n\n\n"
-                    },
-                    {
-                      "text": "Rows count: 3\n"
-                    },
-                    {
-                      "text": "Total no of columns: 5\n"
-                    },
-                    {
-                      "text": "The issue tracker is:Bugzilla\n"
-                    },
-                    {
-                      "text": "\n"
+                      "text": "Total frames: 15\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-12T16:26:09.396Z",
+                  "startTime": "2023-07-13T08:59:40.383Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\video.webm"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-frame_windohandle-iFrame-Handle-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-WebTablePractice4-webTable-Handle-chromium\\test-finished-1.png"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-frame_windohandle-iFrame-Handle-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -119,9 +107,9 @@
               "status": "expected"
             }
           ],
-          "id": "b32936bc03c7c71e4bc4-31150ac5edabe62b7df7",
-          "file": "tests/WebTablePractice4.test.ts",
-          "line": 3,
+          "id": "d80895f76a64550c77b7-49b4cccd7e01de93de8a",
+          "file": "tests/frame_windohandle.test.ts",
+          "line": 4,
           "column": 5
         }
       ]

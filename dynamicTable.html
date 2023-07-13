@@ -1,0 +1,78 @@
+<!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+<style>
+    table.sortable {
+      width: 100%;
+      background-color: #ffffff;
+      border-collapse: collapse;
+      border-width: 2px;
+      border-color: #ffcc00;
+      border-style: solid;
+      color: #000000;
+    }
+    
+    table.sortable td, table.sortable th {
+      border-width: 2px;
+      border-color: #ffcc00;
+      border-style: solid;
+      padding: 3px;
+    }
+    
+    table.sortable thead {
+      background-color: #ffcc00;
+    }
+    </style>
+
+    <body>
+        <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    </body>
+    
+    <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
+    <table class="sortable">
+      <thead>
+        <tr>
+          <th>Select</th> 
+          <th>Company</th>
+          <th>Headcount</th>
+          <th>Headquarters</th>
+          <th>Rank Based on Market Cap</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="item">        
+          <td><input type="checkbox"></td>
+          <td>TCS</td>  
+          <td>600000</td>
+          <td>Mumbai</td>
+          <td>1</td>          
+        </tr>
+        <tr class="item">
+          <td><input type="checkbox"></td>  
+          <td>Infosys</td>
+          <td>300000</td>
+          <td>Bengaluru</td>
+          <td>2</td>
+        </tr>
+        <tr class="item">
+          <td><input type="checkbox"></td>
+          <td>HCL</td>
+          <td>200000</td>
+          <td>Delhi</td>
+          <td>3</td>
+        </tr>
+        <tr class="item">
+          <td><input type="checkbox"></td>
+          <td>Wipro</td>
+          <td>250000</td>
+          <td>Bengaluru</td>
+          <td>4</td>
+        </tr>
+        <tr class="item">
+          <td><input type="checkbox"></td>
+          <td>Cognizant</td>
+          <td>160000</td>
+          <td>Chennai</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    </table>
+        
