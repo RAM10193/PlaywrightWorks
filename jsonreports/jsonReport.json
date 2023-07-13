@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 11854.003999999724
+      "totalTime": 10343.787000000477
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
-          "tests/frame_windohandle.test.ts"
+          "tests/dynamicWebTable.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\frame_windohandle.test.ts",
-      "file": "tests/frame_windohandle.test.ts",
+      "title": "tests\\dynamicWebTable.test.ts",
+      "file": "tests/dynamicWebTable.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "iFrame Handle",
+          "title": "dynamicWebTable Handle",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,26 +80,29 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9876,
+                  "duration": 7919,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Total frames: 15\n"
+                      "text": "No of rows: 5\n"
+                    },
+                    {
+                      "text": "No of columns: 5\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-13T08:59:40.383Z",
+                  "startTime": "2023-07-13T09:30:49.299Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-frame_windohandle-iFrame-Handle-chromium\\video.webm"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-dynamicWebTable-dynamicWebTable-Handle-chromium\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-frame_windohandle-iFrame-Handle-chromium\\test-finished-1.png"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-dynamicWebTable-dynamicWebTable-Handle-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -107,9 +110,9 @@
               "status": "expected"
             }
           ],
-          "id": "d80895f76a64550c77b7-49b4cccd7e01de93de8a",
-          "file": "tests/frame_windohandle.test.ts",
-          "line": 4,
+          "id": "a4552c05f34ae1278c25-dbe73884de3bbe13f4a2",
+          "file": "tests/dynamicWebTable.test.ts",
+          "line": 3,
           "column": 5
         }
       ]

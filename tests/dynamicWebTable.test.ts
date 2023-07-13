@@ -3,7 +3,35 @@ import {test} from "@playwright/test"
 test("dynamicWebTable Handle", async({page}) =>{
 
    await page.goto("C:/PlaywrightWorks/dynamicTable.html");
-   //WebElement tbl = dr.findelement(By.xpath()); 
+
+   //table
+   const table = page.locator("//table[@class='sortable']");
+
+   const rows = table.locator("//tbody/tr");
+
+  //const rows = page.locator("//table[@class='sortable']//tbody/tr")
+
+   console.log("No of rows: "+ await rows.count());
+
+   //column count
+   const col = table.locator("//tbody/tr[1]/td");
+
+   //const col = rows.first().locator("td");
+
+   console.log("No of columns: "+ await col.count());
+
+   
+
+
+
+
+   await page.waitForTimeout(5000);
+
+   
+
+
+
+   /*//WebElement tbl = dr.findelement(By.xpath()); 
    //To capture the entire table:   
    const table = page.locator("//table");
    await table.scrollIntoViewIfNeeded();
@@ -25,6 +53,6 @@ test("dynamicWebTable Handle", async({page}) =>{
    //To know the columns count
    const col = rows.first().locator("td");
    console.log("Total no of columns: "+ await col.count());
-   await page.waitForTimeout(5000);
+   await page.waitForTimeout(5000);*/
 
 });
