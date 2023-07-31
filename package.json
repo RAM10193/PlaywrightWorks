@@ -10,7 +10,7 @@
     "testBS": "npx playwright test pomtests/registerandLogin.test.ts",
     "report": "npx playwright show-report",
     "postinstall": "npm update browserstack-node-sdk",
-    "test:bdd": "cucumber-js --require cucumber.config.ts --require tests/bddtests/stepdefinitions/**/*.ts --format @cucumber/pretty-formatter"
+    "testbdd": "cucumber-js test"
   },
   "keywords": [
     "browserstack",
@@ -30,6 +30,7 @@
     "@percy/cli": "^1.26.1",
     "@percy/playwright": "^1.0.4",
     "browserstack-local": "^1.5.3",
-    "browserstack-node-sdk": "^1.22.0"
+    "browserstack-node-sdk": "^1.22.0",
+    "ts-node": "^10.9.1"
   }
 }

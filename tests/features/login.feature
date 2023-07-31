@@ -8,5 +8,3 @@ Scenario: Login to the Account Details page
     When the user enters "gkmram@gmail.com" in the Login field
     Then the user enters "Ramkrishna93$" in the password field
     Then the user clicks the Login button
-
-    
