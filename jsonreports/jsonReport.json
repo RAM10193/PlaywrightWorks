@@ -11,7 +11,8 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 33623.06700000167
+      "actualWorkers": 1,
+      "totalTime": 21133.8180000782
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,27 +48,27 @@
         "testDir": "C:/PlaywrightWorks",
         "testIgnore": [],
         "testMatch": [
-          "tests/frame_windohandle.test.ts"
+          "tests/login.test.ts"
         ],
         "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.35.1",
-    "workers": 1,
+    "version": "1.36.2",
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\frame_windohandle.test.ts",
-      "file": "tests/frame_windohandle.test.ts",
+      "title": "tests\\login.test.ts",
+      "file": "tests/login.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "iFrame Handle",
-          "ok": false,
+          "title": "Login Test Demo",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,54 +80,32 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30023,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\PlaywrightWorks\\tests\\frame_windohandle.test.ts",
-                        "column": 74,
-                        "line": 36
-                      },
-                      "message": "Error: locator.fill: Target closed\n=========================== logs ===========================\nwaiting for frameLocator('xpath=//iframe[@id=\\'firstFr\\']').locator('iframe[src=\\'innerFrame\\']').locator('xpath=//label[text()=\\'Email\\']/following::input')\n============================================================\n\n\u001b[0m \u001b[90m 34 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m innerframe \u001b[33m=\u001b[39m frame\u001b[33m.\u001b[39mlocator(\u001b[32m\"iframe[src='innerFrame']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m innerframe\u001b[33m.\u001b[39mlocator(\u001b[32m\"//label[text()='Email']/following::input\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"mno@gmail.com\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\PlaywrightWorks\\tests\\frame_windohandle.test.ts:36:74\u001b[22m"
-                    },
-                    {
-                      "message": "Pending operations:\n  - locator.fill at tests\\frame_windohandle.test.ts:36:74\n"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Total frames: 17\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 19688,
+                  "errors": [],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-14T09:49:45.293Z",
+                  "startTime": "2023-08-04T16:20:17.865Z",
                   "attachments": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-frame_windohandle-iFrame-Handle-chromium\\video.webm"
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-login-Login-Test-Demo-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\PlaywrightWorks\\test-results\\tests-frame_windohandle-iFrame-Handle-chromium\\test-failed-1.png"
+                      "path": "C:\\PlaywrightWorks\\test-results\\tests-login-Login-Test-Demo-chromium\\test-finished-2.png"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "d80895f76a64550c77b7-49b4cccd7e01de93de8a",
-          "file": "tests/frame_windohandle.test.ts",
+          "id": "ef85df6096d4739f2c52-40fa56fd510c65c6e7a1",
+          "file": "tests/login.test.ts",
           "line": 4,
           "column": 5
         }

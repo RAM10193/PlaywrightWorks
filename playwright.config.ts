@@ -5,7 +5,7 @@ import { getCdpEndpoint } from './browserstack.config.js';
 const config: PlaywrightTestConfig = {
     //testMatch: ["tests/checkbox.test.ts"],
     //testMatch: ["tests/assertion.test.ts"],
-    //testMatch: ["tests/login.test.ts"]
+    testMatch: ["tests/login.test.ts"],
     //testMatch: ["tests/recorded.login.test.ts"],    
     //testMatch: ["pomtests/registerandLogin.test.ts"],
     //testMatch: ["tests/visualcomparison.test.ts"],
@@ -14,7 +14,7 @@ const config: PlaywrightTestConfig = {
     //testMatch: ["tests/webTablePractice3.test.ts"],
     //testMatch: ["tests/WebTablePractice4.test.ts"],
     //testMatch: ["tests/dynamicWebTable.test.ts"],
-    testMatch: ["tests/frame_windohandle.test.ts"],
+    //testMatch: ["tests/frame_windohandle.test.ts"],
     
 
     //Importing BrowserStack setup to Config file

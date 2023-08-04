@@ -8,6 +8,6 @@ node_modules/
 /log
 /tests/*/*.png
 /tests/*.png
-/jsonreports/
+jsonreports/*.json
 cucumber-report.json
 cucumber-report.html
