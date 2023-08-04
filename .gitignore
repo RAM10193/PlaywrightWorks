@@ -1,4 +1,5 @@
 node_modules/
+/test-result/
 /test-results/
 /playwright-report/
 /playwright/.cache/
@@ -8,3 +9,5 @@ node_modules/
 /tests/*/*.png
 /tests/*.png
 /jsonreports/
+cucumber-report.json
+cucumber-report.html

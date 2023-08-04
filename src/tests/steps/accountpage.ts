@@ -1,16 +1,14 @@
 import { Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { Browser, Page } from "@playwright/test";
+import { pageFixture } from "../hooks/pageFixture";
 
-let browser: Browser;
-let page: Page;
+setDefaultTimeout(60*1000*5);
 
-setDefaultTimeout(60000);
-
-/*Then('the user enters a {string} in the search field', async function (product) {
-    await this.page.locator("(//input[@placeholder='Search For Products' ][1])")
+Then('the user enters a {string} in the search field', async function (product) {
+    await pageFixture.page.locator("(//input[@name='search'])[1]")
             .type(product);    
 });
 
 Then('the user clicks the search button', async function () {
-    await page.click("//button[text()='Search']");
-});*/
+    await pageFixture.page.locator("(//button[@type='submit'])[1]").click();
+});

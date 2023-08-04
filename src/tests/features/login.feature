@@ -6,15 +6,15 @@ Feature: Login Lambda Test
     Background:
         Given A user has landed user credential page
         Then verify the URL of the Login page
-
+    @smoke
     Scenario: Login should be success
             And the user enters "gkmram@gmail.com" in the Login field
             And the user enters "Ramkrishna93$" in the password field
             And the user clicks the Login button
-        Then the login should be success
-
+            Then the login should be success
+    
     Scenario: Login should be failed
             And the user enters "gkmram" in the Login field
             And the user enters "Ramkrishna93$" in the password field
             And the user clicks the Login button
-But the login should be failed
+            But the login should be failed

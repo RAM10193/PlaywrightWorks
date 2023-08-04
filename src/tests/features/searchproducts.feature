@@ -11,9 +11,11 @@ Feature: Search Products
             And the user enters "<password>" in the password field
             And the user clicks the Login button
         Then the login should be success
+            And the user enters a "<productname>" in the search field
+        Then the user clicks the search button
 
         Examples:
 
-            | username         | password      |
-            | gkmram@gmail.com | Ramkrishna93$ |
-            | mno@gmail.com    | mno1234       |
+            | username         | password      | productname |
+            | gkmram@gmail.com | Ramkrishna93$ | ipad        |
+            | mno@gmail.com    | mno1234       | iphone      |

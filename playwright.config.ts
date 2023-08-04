@@ -73,7 +73,7 @@ const config: PlaywrightTestConfig = {
         outputFile: "jsonreports/jsonReport.json"
     }], ["html",{
             open: 'never'
-    }]]
+    }]],
 };
 
 export default config;
