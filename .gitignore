@@ -1,6 +1,7 @@
 node_modules/
 /test-result/
 /test-results/
+/playwright-report/
 /playwright/.cache/
 /browserstack.err
 /local.log
